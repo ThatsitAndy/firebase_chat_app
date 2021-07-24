@@ -1,6 +1,5 @@
-
 # pull official base image
-FROM node:10
+FROM node:latest
 
 # set working directory
 WORKDIR /app
@@ -14,8 +13,6 @@ COPY package.json ./
 COPY package-lock.json ./
 # Installs all node packages
 RUN npm install 
-RUN npm install  @material-ui/core
-
 
 # Copies everything over to Docker environment
 COPY . ./

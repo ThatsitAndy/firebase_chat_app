@@ -23,7 +23,7 @@ const styles = {
     position: "relative",
     display: "flex",
     marginBottom: 20,
-    backgroundColor: "#1a1a1a",
+    backgroundColor: "#121212",
   },
   image: {
     minWidth: 200,

@@ -4,6 +4,10 @@ React messaging chat app frontend with Firebase backend.
 
 # Firebase hosting https://thatsit-chat.web.app/
 
+# Firebase functions API endpoint https://europe-west1-thatsit-chat.cloudfunctions.net/api
+
+/posts => all posts.
+
 # Building command for the Docker image
 
 docker build -t nameofyourapp:latest .

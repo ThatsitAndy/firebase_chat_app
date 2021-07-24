@@ -83,6 +83,8 @@ export default {
         borderRadius: "50%",
       },
       "& .profile-details": {
+        border: "1px solid rgba(0, 0, 0, 0.05)",
+        borderRadius: "5px",
         textAlign: "center",
         "& span, svg": {
           verticalAlign: "middle",

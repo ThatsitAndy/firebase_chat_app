@@ -24,8 +24,8 @@ import { getPost, clearErrors } from "../../redux/actions/dataActions";
 const styles = (theme) => ({
   ...theme.spreadThis,
   profileImage: {
-    maxWidth: 50,
-    height: 50,
+    maxWidth: 80,
+    height: 80,
     borderRadius: "50%",
     objectFit: "cover",
   },
@@ -34,7 +34,7 @@ const styles = (theme) => ({
   },
   closeButton: {
     position: "absolute",
-    left: "90%",
+    left: "85%",
     color: "#fff",
   },
   expandButton: {
@@ -100,11 +100,11 @@ class PostDialog extends Component {
         <CircularProgress size={200} thickness={2} />
       </div>
     ) : (
-      <Grid container spacing={16}>
+      <Grid className={classes.profile} container spacing={16}>
         <Grid item sm={5}>
           <img src={userImage} alt="Profile" className={classes.profileImage} />
         </Grid>
-        <Grid item sm={7}>
+        <Grid className={classes.profileDetails} item sm={7}>
           <Typography
             component={Link}
             color="primary"
