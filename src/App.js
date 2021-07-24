@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { MuiThemeProvider } from "@material-ui/core";
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import jwtDecode from "jwt-decode";
 //Redux
 import { Provider } from "react-redux";
@@ -20,6 +18,8 @@ import signup from "./pages/signup";
 import user from "./pages/user";
 //AXIOS
 import axios from "axios";
+// MUI
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme(themeObject);
 
