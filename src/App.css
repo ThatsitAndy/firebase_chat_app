@@ -1,38 +1,185 @@
-.App {
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #1a1a1a;
+}
+.container {
+  align-content: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+.nav-container {
+  margin: auto;
+}
+.nav-container svg {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.light {
+  color: #fff;
+}
+.light-l {
+  color: #fff;
+  text-align: left;
+}
+.form {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+.expandButton {
+  position: absolute;
+  left: 90%;
+  color: #fff;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h6 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.button {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 12px 32px;
+  border-radius: 100px;
+  background-color: #000;
+  -webkit-transition: background-color 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  color: #dbdbdb;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.button.dark {
+  background-color: #242424;
+}
+
+.button.previous {
+  width: 100%;
+  max-width: 124px;
+  border-style: none;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button.previous:hover {
+  background-color: #8f8f8f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button.next {
+  width: 100%;
+  max-width: 124px;
+  border-style: none;
+  color: #fff;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button.next:hover {
+  background-color: #757575;
+}
+
+.button.dark-next {
+  width: 100%;
+  max-width: 124px;
+  border-style: none;
+  background-color: #fff;
+  color: #242424;
+  text-align: center;
+}
+
+.button.dark-next:hover {
+  background-color: #8f8f8f;
+}
+
+.button.dark-previous {
+  width: 100%;
+  max-width: 124px;
+  border-style: none;
+  background-color: #fff;
+  color: #121212;
+  text-align: center;
+}
+
+.button.dark-previous:hover {
+  background-color: #8f8f8f;
+}
+
+.button-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 12px 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #1f1f1f;
+  color: #dbdbdb;
+  font-size: 14px;
+  line-height: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.button-icon.dark {
+  background-color: #242424;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-icon.newsletter {
+  width: 56px;
+  height: 34px;
 }
